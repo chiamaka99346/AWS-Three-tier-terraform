@@ -34,6 +34,7 @@ module "eks-deployment" {
     admin_user_arns = [
         "arn:aws:iam::570071717271:user/Terraform"
     ]
+    public_access_cidrs = var.public_access_cidrs
   
 }
 

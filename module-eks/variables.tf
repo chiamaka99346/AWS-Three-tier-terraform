@@ -59,6 +59,12 @@ variable "capacity_type" {
   type        = string
   default     = "ON_DEMAND"
 }
+
+variable "public_access_cidrs" {
+  description = "CIDR blocks allowed to access the EKS public endpoint"
+  type        = list(string)
+  default     = ["0.0.0.0/0"]
+}
 variable "eks_version" {
   description = "EKS cluster version"
   type        = string

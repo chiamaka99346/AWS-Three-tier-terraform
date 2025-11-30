@@ -15,3 +15,4 @@ domain-name = "amakacloud.online"
 cluster_name = "eks-cluster"
 repository_name = "eks-repository"
 email = "anumba.chiamaka1990@gmail.com"
+public_access_cidrs = ["0.0.0.0/0"]
