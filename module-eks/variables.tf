@@ -65,6 +65,12 @@ variable "public_access_cidrs" {
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
+
+variable "endpoint_private_access" {
+  description = "Whether the EKS API should be reachable via the VPC private endpoint"
+  type        = bool
+  default     = false
+}
 variable "eks_version" {
   description = "EKS cluster version"
   type        = string

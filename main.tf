@@ -35,6 +35,7 @@ module "eks-deployment" {
         "arn:aws:iam::570071717271:user/Terraform"
     ]
     public_access_cidrs = var.public_access_cidrs
+    endpoint_private_access = var.endpoint_private_access
   
 }
 
