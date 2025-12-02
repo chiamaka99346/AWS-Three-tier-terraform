@@ -17,3 +17,4 @@ repository_name = "eks-repository"
 email = "anumba.chiamaka1990@gmail.com"
 public_access_cidrs = ["0.0.0.0/0"]
 endpoint_private_access = false
+admin_role_arns = ["arn:aws:iam::570071717271:role/eks-admin"]

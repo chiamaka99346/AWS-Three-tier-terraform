@@ -178,3 +178,16 @@ variable "email" {
   type        = string
   default     = "anumba.chiamaka1990@gmail.com"
 }
+
+variable "admin_role_arns" {
+  type        = list(string)
+  default     = []
+  description = "IAM role ARNs to map to system:masters in aws-auth"
+}
+
+variable "admin_user_arns" {
+  type        = list(string)
+  default     = []
+  description = "IAM user ARNs to map to system:masters in aws-auth"
+}
+
